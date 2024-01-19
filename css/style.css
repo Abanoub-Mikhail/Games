@@ -1,0 +1,125 @@
+
+
+body {
+    background-color: #272b30;
+    color: #fff;
+    font-family: 'Comfortaa', sans-serif;
+}
+
+
+h1,h2,h3,h4,h5,h6 {
+    color: #fff;
+    font-family: 'Nerko One', cursive;
+}
+
+
+nav {
+    background-color: rgb(53,73,123);
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgb(0, 0, 0 , 0.7);
+    margin-inline: auto;
+    margin-top: -30px;
+}
+nav h5 img {
+    max-width: 40px;
+}
+
+nav .nav-item .nav-link {
+    color: white;
+    text-transform:uppercase ;
+    font-size: .75rem;
+}
+.navbar-nav .nav-link.active ,.navbar-nav .nav-link:hover  {
+    color : #09c;
+    transition: color 0.5s;
+    cursor: pointer;
+}
+
+.home .card span {
+    font-weight: 700;
+}
+
+header img {
+    max-height: 30vh;
+    object-fit: cover;
+}
+
+
+.home .card {
+    color: white;
+    background-color: transparent;
+}
+
+.home .card .card-body p {
+    color: #62686e;
+}
+
+.badge-bg {
+    background-color: #32383e ;
+}
+
+
+
+#games .card {
+    filter: grayscale(0.8);
+    transition: transform 0.5s, filter 0.5s 0.1s;
+    cursor: pointer;
+}
+
+#games .card:hover{
+    transform:  scale(1.05);
+    filter: grayscale(0);
+}
+
+.btn:hover {
+    background-color: transparent;
+    color: white;
+}
+
+
+.loading {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #272b30;
+    z-index: 999999;
+}
+
+
+/* HTML: <div class="loader"></div> */
+.loader {
+    width: 64px;
+    height: 64px;
+    position: relative;
+    background-image:
+      linear-gradient(#FFF 16px, transparent 0) ,
+      linear-gradient(#FF3D00 16px, transparent 0) ,
+      linear-gradient(#FF3D00 16px, transparent 0) ,
+      linear-gradient(#FFF 16px, transparent 0);
+    background-repeat: no-repeat;
+    background-size: 16px 16px;
+    background-position: left top , left bottom , right top , right bottom;
+    animation: rotate 1s linear infinite;
+  }
+  @keyframes rotate {
+    0% {
+      width: 64px;
+      height: 64px;
+      transform: rotate(0deg)
+    }
+    50% {
+      width: 30px;
+      height: 30px;
+      transform: rotate(180deg)
+    }
+    100% {
+      width: 64px;
+      height: 64px;
+      transform: rotate(360deg)
+    }
+  }
